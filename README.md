@@ -1,4 +1,7 @@
-# Example showing How to use WebSocket HTML 5 with JBoss Fuse
+JBoss Fuse WebSocket HTML 5 Demo Quickstart Guide
+=================================================
+
+Demo based on JBoss Fuse product.
 
 Setup and Configuration
 -----------------------
