@@ -6,5 +6,5 @@ command -v mvn -q >/dev/null 2>&1 || { echo >&2 "Maven is required but not insta
 echo
 echo Starting Feeder application.
 echo
-cd ../websocket-activemq-camel/feeder
+cd ../projects/websocket-activemq-camel/feeder
 mvn -P run-trader

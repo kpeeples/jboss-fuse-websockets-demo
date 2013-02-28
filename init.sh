@@ -1,8 +1,8 @@
 #!/bin/sh 
 DEMO="JBoss Fuse Websocket Demo"
 VERSION=6.0.0
-FUSE=jboss-fuse-6.0.0.redhat-009
-FUSE_BIN=jboss-fuse-full-6.0.0.redhat-009.tar.gz
+FUSE=jboss-fuse-6.0
+FUSE_BIN=jboss-fuse-6.0.0.GA.zip
 DEMO_HOME=./target
 FUSE_HOME=$DEMO_HOME/$FUSE
 SERVER_CONF=$FUSE_HOME/etc
@@ -52,14 +52,12 @@ if [ -x $FUSE_HOME ]; then
 		# Unzip the JBoss Fuse instance.
 		echo Unpacking JBoss FUSE $VERSION
 		echo
-		tar -zxf $SRC_DIR/$FUSE_BIN 
-		mv $FUSE $DEMO_HOME
+		unzip -q -d $DEMO_HOME $SRC_DIR/$FUSE_BIN 
 else
 		# Unzip the JBoss Fuse instance.
 		echo Unpacking new JBoss Fuse...
 		echo
-		tar -zxf $SRC_DIR/$FUSE_BIN
-	  mv $FUSE $DEMO_HOME
+		unzip -q -d $DEMO_HOME $SRC_DIR/$FUSE_BIN 
 fi
 
 
