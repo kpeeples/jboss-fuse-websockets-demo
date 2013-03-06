@@ -7,7 +7,7 @@ DEMO_HOME=./target
 FUSE_HOME=$DEMO_HOME/$FUSE
 SERVER_CONF=$FUSE_HOME/etc
 SRC_DIR=./installs
-PRJ_DIR=./projects/websocket-activemq-camel
+PRJ_DIR=./projects/jboss-fuse-websocket-demo
 
 
 echo
@@ -19,7 +19,7 @@ command -v mvn -q >/dev/null 2>&1 || { echo >&2 "Maven is required but not insta
 
 # make some checks first before proceeding.	
 if [[ -r $SRC_DIR/$FUSE_BIN || -L $SRC_DIR/$FUSE_BIN ]]; then
-		echo JBoss Fuse sources are present...
+		echo $DEMO sources are present...
 		echo
 else
 		echo Need to download $FUSE_BIN package from the Customer Support Portal 
@@ -49,45 +49,39 @@ if [ -x $FUSE_HOME ]; then
 		rm -rf $FUSE_HOME.OLD
 		mv $FUSE_HOME $FUSE_HOME.OLD
 
-		# Unzip the JBoss Fuse instance.
-		echo Unpacking JBoss FUSE $VERSION
+		# Unzip the JBoss instance.
+		echo Unpacking JBoss Fuse $VERSION
 		echo
-		unzip -q -d $DEMO_HOME $SRC_DIR/$FUSE_BIN 
+		unzip -q -d $DEMO_HOME $SRC_DIR/$FUSE_BIN
 else
-		# Unzip the JBoss Fuse instance.
+		# Unzip the JBoss instance.
 		echo Unpacking new JBoss Fuse...
 		echo
-		unzip -q -d $DEMO_HOME $SRC_DIR/$FUSE_BIN 
+		unzip -q -d $DEMO_HOME $SRC_DIR/$FUSE_BIN
 fi
 
 
-echo "  - enabling demo accounts logins in users.properties file..."
-echo
-cp support/users.properties $SERVER_CONF
+#echo "  - enabling demo accounts logins in users.properties file..."
+#echo
+#cp support/users.properties $SERVER_CONF
 
-echo "  - copying updated JBoss Fuse configuration file fuseFUSE-websocket.xml from project..."
-echo
-cp projects/websocket-activemq-camel/feeder/src/main/config/activemq-websocket.xml $SERVER_CONF/activemq.xml
+#echo "  - copying updated JBoss A-MQ configuration file fuseamq-websocket.xml from project..."
+#echo
+#cp $PRJ_DIR/feeder/src/main/config/fuseamq-websocket.xml $SERVER_CONF/activemq.xml
 
-echo "  - making sure 'Fuse' for server is executable..."
+echo "  - making sure 'fuse' for server is executable..."
 echo
 chmod u+x $FUSE_HOME/bin/fuse
 
-echo Now going to build the Feeder project.
+echo Now going to build the project.
 echo
-cd $PRJ_DIR/feeder
-mvn clean install -DskipTests
-
-echo
-echo Now going to build the Camel project.
-echo
-cd ../camel
+cd $PRJ_DIR
 mvn clean install -DskipTests
 
 echo
 echo To get started see the README.md file:
 echo
-cd ../../..
+cd ../..
 cat README.md
 
 echo Red Hat $DEMO $VERSION Setup Completed.

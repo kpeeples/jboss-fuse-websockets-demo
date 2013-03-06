@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.fusesource.examples.activemq.websocket</groupId>
+    <groupId>com.jboss.fuse.examples.websocket</groupId>
     <artifactId>project</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
-    <name>FuseSource :: WebSocket :: ActiveMQ &amp; Camel Project</name>
+    <name>JBoss Fuse WebSocket Project</name>
 
     <properties>
         <camel-version>2.10.3</camel-version>
@@ -18,7 +18,7 @@
 
     <modules>
         <module>feeder</module>
-        <module>web</module>
+        <!-- module>web</module -->
         <module>camel</module>
     </modules>
 
