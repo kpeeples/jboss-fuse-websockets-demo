@@ -1,7 +1,7 @@
-package com.fusesource.examples.activemq.websocket.feed;
+package org.jboss.amq.examples.websocket.feed;
 
 /**
-* Copyright 2011 FuseSource
+* Copyright 2011 
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,8 +16,8 @@ package com.fusesource.examples.activemq.websocket.feed;
 * limitations under the License.
 */
 
-import com.fusesource.examples.activemq.websocket.marketdata.News;
-import com.fusesource.examples.activemq.websocket.marketdata.Stock;
+import org.jboss.amq.examples.websocket.marketdata.News;
+import org.jboss.amq.examples.websocket.marketdata.Stock;
 
 import javax.jms.Message;
 import javax.jms.Session;
