@@ -1,4 +1,4 @@
-JBoss A-MQ WebSocket HTML 5 Demo Quickstart Guide
+JBoss Fuse WebSocket HTML 5 Demo Quickstart Guide
 =================================================
 
 Demo based on JBoss Fuse product.
@@ -22,22 +22,25 @@ See Quick Start Guide in project as ODT and PDF for details on installation. For
 
 - start JBoss Fuse using the shell or .bat script under bin directory bin/fuse
 	
-	Please wait while JBoss Fuse is loading...
-	100% [========================================================================]
+[kpeeples@localhost bin]$ ./fuse
+Please wait while JBoss Fuse is loading...
+100% [========================================================================]
 
-	      _ ____                  ______
-	     | |  _ \                |  ____|
-	     | | |_) | ___  ___ ___  | |__ _   _ ___  ___
-	 _   | |  _ < / _ \/ __/ __| |  __| | | / __|/ _ \
-	| |__| | |_) | (_) \__ \__ \ | |  | |_| \__ \  __/
-	 \____/|____/ \___/|___/___/ |_|   \__,_|___/\___|
+      _ ____                  ______
+     | |  _ \                |  ____|             
+     | | |_) | ___  ___ ___  | |__ _   _ ___  ___
+ _   | |  _ < / _ \/ __/ __| |  __| | | / __|/ _ \
+| |__| | |_) | (_) \__ \__ \ | |  | |_| \__ \  __/
+ \____/|____/ \___/|___/___/ |_|   \__,_|___/\___|
 
-	  JBoss Fuse (6.0.0.redhat-014)
-	  http://www.redhat.com/products/jbossenterprisemiddleware/fuse/
+  JBoss Fuse (6.0.0.redhat-014)
+  http://www.redhat.com/products/jbossenterprisemiddleware/fuse/
 
-	Hit '<tab>' for a list of available commands
-	and '[cmd] --help' for help on a specific command.
-	Hit '<ctrl-d>' or 'osgi:shutdown' to shutdown JBoss Fuse.
+Hit '<tab>' for a list of available commands
+and '[cmd] --help' for help on a specific command.
+Hit '<ctrl-d>' or 'osgi:shutdown' to shutdown JBoss Fuse.
+
+JBossFuse:karaf@root> 
 
 - when the JBoss Fuse console appears, install the activemq-websocket war file. This war file contains the web project and stomp javascript clients used to open communication between the web browser and websocket server running in JBoss Fuse.
 
