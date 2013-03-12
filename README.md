@@ -26,16 +26,8 @@ See Quick Start Guide in project as ODT and PDF for details on installation. For
 Please wait while JBoss Fuse is loading...
 100% [========================================================================]
 
-      _ ____                  ______
-     | |  _ \                |  ____|
-     | | |_) | ___  ___ ___  | |__ _   _ ___  ___
- _   | |  _ < / _ \/ __/ __| |  __| | | / __|/ _ \
-| |__| | |_) | (_) \__ \__ \ | |  | |_| \__ \  __/
- \____/|____/ \___/|___/___/ |_|   \__,_|___/\___|
-
 JBoss Fuse (6.0.0.redhat-014)
 http://www.redhat.com/products/jbossenterprisemiddleware/fuse/
-
 
 Hit '<tab>' for a list of available commands
 and '[cmd] --help' for help on a specific command.
