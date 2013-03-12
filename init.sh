@@ -61,13 +61,13 @@ else
 fi
 
 
-#echo "  - enabling demo accounts logins in users.properties file..."
-#echo
-#cp support/users.properties $SERVER_CONF
+echo "  - enabling demo accounts logins in users.properties file..."
+echo
+cp support/users.properties $SERVER_CONF
 
-#echo "  - copying updated JBoss A-MQ configuration file fuseamq-websocket.xml from project..."
-#echo
-#cp $PRJ_DIR/feeder/src/main/config/fuseamq-websocket.xml $SERVER_CONF/activemq.xml
+echo "  - copying updated JBoss A-MQ configuration file fuseamq-websocket.xml from project..."
+echo
+cp $PRJ_DIR/feeder/src/main/config/fuseamq-websocket.xml $SERVER_CONF/activemq.xml
 
 echo "  - making sure 'fuse' for server is executable..."
 echo
