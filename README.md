@@ -1,7 +1,12 @@
 JBoss Fuse WebSocket HTML 5 Demo Quickstart Guide
 =================================================
 
-Demo based on JBoss Fuse product.
+Websocket Demo based on JBoss Fuse product.  
+
+Videos:  
+http://vimeo.com/user16928011/fuse-getting-started-part1  
+http://vimeo.com/user16928011/fuse-getting-started-part2  
+http://vimeo.com/user16928011/fuse-getting-started-part3  
 
 Setup and Configuration
 -----------------------
@@ -10,13 +15,13 @@ See Quick Start Guide in project as ODT and PDF for details on installation. For
 
 - see README in 'installs' directory
 
-- add product 
+- add product from http://www.jboss.org/products/fsw/download/
 
 - run 'init.sh' & read output
 
-- read Quick Start Guide (coming soon).
+- read Quick Start Guide  
 
-- setup JBDS for project import, add jboss-fuse server (coming soon).
+- setup JBDS for project import, add jboss-fuse server  
 
 - import projects
 
@@ -54,5 +59,6 @@ Released versions
 -----------------
 See the tagged releases for the following verisons of the product:
 
+- v2.0 updated to JBoss Fuse v6.1 release.
 - v1.0 is initial JBoss Fuse v6 release.
 
