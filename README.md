@@ -29,20 +29,32 @@ See Quick Start Guide in project as ODT and PDF for details on installation. For
 	
 [kpeeples@localhost bin]$ ./fuse
 Please wait while JBoss Fuse is loading...
-100% [========================================================================]
+ 100% [====================================================================]
+      _ ____                  ______
+     | |  _ \                |  ____|             
+     | | |_) | ___  ___ ___  | |__ _   _ ___  ___
+ _   | |  _ < / _ \/ __/ __| |  __| | | / __|/ _ \
+| |__| | |_) | (_) \__ \__ \ | |  | |_| \__ \  __/
+ \____/|____/ \___/|___/___/ |_|   \__,_|___/\___|
 
-JBoss Fuse (6.0.0.redhat-014)
-http://www.redhat.com/products/jbossenterprisemiddleware/fuse/
+  JBoss Fuse (6.1.0.redhat-379)
+  http://www.redhat.com/products/jbossenterprisemiddleware/fuse/
 
 Hit '<tab>' for a list of available commands
 and '[cmd] --help' for help on a specific command.
+
+Open a browser to http://localhost:8181 to access the management console
+
+Create a new Fabric via 'fabric:create'
+or join an existing Fabric via 'fabric:join [someUrls]'
+
 Hit '<ctrl-d>' or 'osgi:shutdown' to shutdown JBoss Fuse.
 
 JBossFuse:karaf@root> 
 
 - when the JBoss Fuse console appears, install the activemq-websocket war file. This war file contains the web project and stomp javascript clients used to open communication between the web browser and websocket server running in JBoss Fuse.
 
-    JBossFuse:karaf@root>install -s war:mvn:org.jboss.amq.examples.websocket/web/1.0/war\?Webapp-Context=activemq-websocket
+    JBossFuse:karaf@root>install -s webbundle:mvn:com.fusesource.examples.websocket/web/1.0/war?Web-ContextPath=/activemq-websocket
 
 - start Feeder application, which will populate randomly data (stock prices) and publish them in a topic which is the  topic used by websocket to expose the date to the web browser. You will find this in the 'support' directory.
 

@@ -1,3 +1,8 @@
+/*
+ Copyright (C) 2010 Jeff Mesnil -- http://jmesnil.net/
+ Copyright (C) 2012 FuseSource, Inc. -- http://fusesource.com
+ */
+
 
 (function() {
     var Client, Stomp, WebSocketStompMock,

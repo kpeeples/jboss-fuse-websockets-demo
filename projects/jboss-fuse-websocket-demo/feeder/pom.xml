@@ -3,17 +3,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.jboss.amq.examples.websocket</groupId>
+        <groupId>com.fusesource.examples.activemq.websocket</groupId>
         <artifactId>project</artifactId>
         <version>1.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>org.jboss.amq.examples.websocket</groupId>
+    <groupId>com.fusesource.examples.websocket</groupId>
     <artifactId>trader</artifactId>
     <packaging>jar</packaging>
     <version>1.0</version>
-    <name>JBoss A-MQ WebSocket Trader Project</name>
+    <name>FuseSource :: WebSocket :: ActiveMQ :: Trader</name>
 
     <profiles>
         <profile>
@@ -32,7 +32,7 @@
                                 </goals>
                                 <phase>package</phase>
                                 <configuration>
-                                    <mainClass>org.jboss.amq.examples.websocket.feed.JSONFeed</mainClass>
+                                    <mainClass>com.fusesource.examples.activemq.websocket.feed.JSONFeed</mainClass>
                                 </configuration>
                             </execution>
                         </executions>

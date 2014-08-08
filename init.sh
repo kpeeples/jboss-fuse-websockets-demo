@@ -1,14 +1,13 @@
 #!/bin/sh 
 DEMO="JBoss Fuse Websocket Demo"
-VERSION=6.0.0
-FUSE=jboss-fuse-6.0
-FUSE_BIN=jboss-fuse-6.0.0.GA.zip
+VERSION=6.1.0
+FUSE=jboss-fuse-6.1.0.redhat-379
+FUSE_BIN=jboss-fuse-full-6.1.0.redhat-379.zip
 DEMO_HOME=./target
 FUSE_HOME=$DEMO_HOME/$FUSE
 SERVER_CONF=$FUSE_HOME/etc
 SRC_DIR=./installs
 PRJ_DIR=./projects/jboss-fuse-websocket-demo
-
 
 echo
 echo "Setting up the Red Hat ${DEMO} environment..."

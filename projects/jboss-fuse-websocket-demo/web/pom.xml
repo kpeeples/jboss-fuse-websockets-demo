@@ -3,21 +3,21 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.jboss.amq.examples.websocket</groupId>
+        <groupId>com.fusesource.examples.activemq.websocket</groupId>
         <artifactId>project</artifactId>
         <version>1.0</version>
     </parent>
 
-    <groupId>org.jboss.amq.examples.websocket</groupId>
+    <groupId>com.fusesource.examples.websocket</groupId>
     <artifactId>web</artifactId>
     <packaging>war</packaging>
     <version>1.0</version>
-    <name>JBoss A-MQ WebSocket Web Project</name>
+    <name>FuseSource :: WebSocket :: ActiveMQ :: Web</name>
 
     <dependencies>
           <dependency>
               <groupId>org.apache.activemq</groupId>
-              <artifactId>activemq-core</artifactId>
+              <artifactId>activemq-all</artifactId>
               <version>${activemq-version}</version>
               <scope>provided</scope>
           </dependency>
@@ -60,7 +60,7 @@
                 </executions>
                 <configuration>
                     <keystore>${project.build.directory}/jetty-ssl.keystore</keystore>
-                    <dname>cn=org.fusesource.example</dname>
+                    <dname>cn=com.fusesource.example</dname>
                     <keypass>jetty-ws</keypass>
                     <storepass>jetty-ws</storepass>
                     <alias>jetty-ws</alias>
