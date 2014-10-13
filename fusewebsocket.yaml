@@ -1,0 +1,8 @@
+title: JBoss Fuse WebSocket HTML 5 Demo Quickstart Guide
+github_repo_url: https://github.com/kpeeples/jboss-fuse-websockets-demo
+technologies: 
+	-WebSocket	
+summary: Websocket Demo based on JBoss Fuse product.
+Level: Beginner
+product: fuse
+author: Kenny Peeples
